@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:gravity="center_vertical" 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#1296db"
+        >
+         <EditText 
+                android:id="@+id/baidu_search_et_chazhao"
+                android:layout_margin="5dp"
+                android:padding="7dp"
+                android:background="@drawable/shop_sou"
+                android:singleLine="true"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="请输入查找地点"
+                android:layout_marginLeft="15dp"
+                />
+         <ImageView
+             android:clickable="true" 
+             android:onClick="onBaiduSearchClick"
+          android:id="@+id/baidu_search_iv_sousuo"
+          android:layout_gravity="center_vertical"
+          android:layout_width="33dp"
+          android:layout_height="33dp"
+          android:src="@drawable/sou"
+          android:layout_marginRight="5dp"
+          />
+    </LinearLayout>
+    <com.baidu.mapapi.map.MapView  
+    android:id="@+id/baidu_search_bmapView"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:clickable="true" />
+
+</LinearLayout>

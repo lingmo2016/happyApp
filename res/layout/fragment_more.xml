@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+     android:background="#f2f2f2"
+    >
+   <LinearLayout
+        android:gravity="center_vertical" 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#1296db"
+        >
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <Spinner 
+                android:id="@+id/fragment_more_spinner"
+            android:layout_margin="3dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            />
+            <ImageView 
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@id/fragment_more_spinner"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/xia2"
+                />
+        </RelativeLayout>
+        
+            <RelativeLayout 
+                android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                >
+                 <EditText 
+                android:id="@+id/fragment_more_et_chazhao"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                android:background="@drawable/shop__more_sou"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入搜索的关键字"
+                />
+            <ImageView
+                android:layout_marginTop="12dp"
+                android:id="@+id/fragment_more_iv_search"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/search" 
+                android:layout_marginRight="5dp"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@id/fragment_more_et_chazhao"
+                />
+            </RelativeLayout>
+            </LinearLayout>
+            
+           <LinearLayout 
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:orientation="vertical"
+               android:padding="10dp"
+              
+               >
+               <ImageView 
+                   android:layout_width="fill_parent"
+                   android:layout_height="65dp"
+                   android:src="@drawable/tou"
+                   android:scaleType="fitXY"
+                   />
+               <LinearLayout 
+                   android:layout_marginTop="10dp"
+                   android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+                   >
+                   <Button 
+                       android:id="@+id/fragment_more_btn_free"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="免  费"
+                       android:textColor="#fff"
+                       android:textSize="16sp"
+                       android:background="@drawable/btn_more"
+                       android:padding="10dp"
+                       />
+                   <Button 
+                       android:id="@+id/fragment_more_btn_remen"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="热  门"
+                       android:textColor="#fff"
+                       android:textSize="16sp"
+                       android:background="@drawable/btn_more"
+                       android:padding="10dp"
+                       android:layout_marginLeft="10dp"
+                       />
+                   <Button 
+                       android:id="@+id/fragment_more_btn_zhoubian"
+                       android:layout_width="0dp"
+                       android:layout_weight="1"
+                       android:layout_height="wrap_content"
+                       android:text="附  近"
+                       android:textColor="#fff"
+                       android:textSize="16sp"
+                       android:background="@drawable/btn_more"
+                       android:padding="10dp"
+                       android:layout_marginLeft="10dp"
+                       />
+               </LinearLayout>
+               
+               <GridView 
+                   android:id="@+id/fragment_more_gridview"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:numColumns="5"
+                   android:layout_marginTop="7dp"
+                   ></GridView>
+               
+               <ImageView 
+                   android:layout_marginTop="7dp"
+              android:layout_width="fill_parent"
+              android:layout_height="170dp"
+              android:src="@drawable/pager1"
+              android:scaleType="fitXY"
+              />
+           </LinearLayout>
+           
+          
+
+</LinearLayout>

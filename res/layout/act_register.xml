@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/act_login"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#87CEFA"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:onClick="onRegBackClick"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:onClick="onRegisterClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ok" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/act_reg_nick"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_register"
+        android:hint="请输入昵称"
+        android:padding="12dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/act_reg_pwd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_register"
+        android:hint="请输入密码"
+        android:padding="12dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/act_reg_pwd2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_register"
+        android:hint="请确认密码"
+        android:padding="12dp"
+        android:singleLine="true" />
+    <EditText
+        android:id="@+id/act_reg_phone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_register"
+        android:hint="请输入手机号"
+        android:padding="12dp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/act_reg_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_register"
+            android:hint="请输入验证码"
+            android:padding="12dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/act_reg_getcode"
+            android:onClick="onGetCodeClick"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/selector_register"
+            android:text="Get Code"
+            android:textColor="#626262" />
+    </LinearLayout>
+
+</LinearLayout>

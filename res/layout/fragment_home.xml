@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    <LinearLayout
+        android:gravity="center_vertical" 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="#1296db"
+        >
+
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="3dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+             >
+            <EditText 
+                android:id="@+id/fragment_home_et_chazhao"
+                android:visibility="gone"
+                android:layout_margin="5dp"
+                android:padding="7dp"
+                android:background="@drawable/shop_sou"
+                android:singleLine="true"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入搜索内容"
+                />
+            <ImageView
+                android:layout_marginTop="12dp"
+                android:id="@+id/fragment_home_iv_fanhui"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/fan" />
+        </RelativeLayout>
+      
+      <ImageView 
+          android:id="@+id/fragment_home_iv_sousuo"
+          android:layout_gravity="center_vertical"
+          android:layout_width="33dp"
+          android:layout_height="33dp"
+          android:src="@drawable/sou"
+          />
+      <ImageView 
+          android:id="@+id/fragment_home_iv_gengduo"
+          android:layout_gravity="center_vertical"
+          android:layout_marginRight="6dp"
+          android:layout_width="33dp"
+          android:layout_height="33dp"
+          android:src="@drawable/duo"
+          android:layout_marginLeft="1dp"
+          />
+    </LinearLayout>
+     
+     
+    
+    <com.xdl.ly.view.XListView
+        android:id="@+id/fragment_home_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+
+</LinearLayout>

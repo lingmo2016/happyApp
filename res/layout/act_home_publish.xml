@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#1296db"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/act_home_publish_back"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/back" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="发布活动"
+                    android:textColor="#cfcfcf"
+                    android:textSize="23dp" />
+
+                <ImageView
+                    android:id="@+id/act_home_publish_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/ok" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/act_home_publish_lin1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" >
+
+                <EditText
+                    android:id="@+id/act_home_publish_et_actionname"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_publish"
+                    android:hint="输入活动名称"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_publish"
+                    android:gravity="center_vertical" >
+
+                    <Spinner
+                        android:id="@+id/act_publish_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null" />
+
+                    <ImageView
+                        android:id="@+id/act_publish_spinner_xia"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="3dp"
+                        android:src="@drawable/xia" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/act_home_publish_et_desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_publish"
+                    android:hint="输入活动简介"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+                
+                    <EditText
+                        android:padding="10dp"
+                        android:background="@drawable/shape_publish"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/act_home_publish_et_details"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="输入活动详情" />
+
+                <LinearLayout
+                    android:id="@+id/act_home_publish_top"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_publish"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    >
+                   
+                </LinearLayout>
+                <LinearLayout 
+                     android:background="@drawable/shape_publish"
+                    android:id="@+id/act_home_publish_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    ></LinearLayout>
+
+                <LinearLayout
+                    android:padding="5dp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/act_home_publish_lin3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_publish"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:layout_width="33dp"
+                        android:layout_height="33dp"
+                        android:src="@drawable/more_zhoubian" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:text="选择地点"
+                        android:textColor="#323232"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/act_home_publish_lin3_location"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="回龙观 兄弟连 " />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/act_home_publish_lin4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_publish"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="3dp" >
+
+                    <ImageView
+                        android:layout_width="39dp"
+                        android:layout_height="39dp"
+                        android:src="@drawable/rmb" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@null"
+                        android:text="活动金额"
+                        android:textColor="#323232"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/act_home_publish_et_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        android:singleLine="true"
+                        android:hint="200.00"
+                        android:background="@null"
+                        android:textColorHint="#1296db" 
+                        android:textColor="#1296db"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/act_home_publish_lin5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/selector_publish"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="7dp" >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/my_send" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:text="活动时间"
+                        android:textColor="#323232"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="1dp"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/act_home_publish_lin5_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:singleLine="true"
+                        android:text="2016-11-13 13:00" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
